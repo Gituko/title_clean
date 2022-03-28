@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains title_clean.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function title_clean_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the title_clean module.
+    case 'help.page.title_clean':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Clean all node titles') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function title_clean_theme() {
+  return [
+    'title_clean' => [
+      'render element' => 'children',
+    ],
+  ];
+}

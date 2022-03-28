@@ -1,0 +1,13 @@
+{
+    "name": "title_clean",
+    "type": "drupal-module",
+    "description": "Clean all node titles",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/title_clean",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/title_clean",
+        "source": "http://cgit.drupalcode.org/title_clean",
+    },
+}

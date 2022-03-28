@@ -1,0 +1,7 @@
+title_clean.title_clean_form:
+  path: '/admin/config/title-clean'
+  defaults:
+    _form: '\Drupal\title_clean\Form\TitleCleanForm'
+    _title: 'TitleCleanForm'
+  requirements:
+    _access: 'TRUE'
